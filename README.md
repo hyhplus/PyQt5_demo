@@ -9,5 +9,5 @@
 
 ## 依赖包安装
 
-pip3 install PyQt5
+pip3 install PyQt5  
 pip3 install pyqt5-tools

@@ -34,7 +34,7 @@ class Example(QMainWindow):
         newAct = QAction('New', self)
 
         # 退出菜单,这里也绑定了工具栏
-        exitAct = QAction(QIcon('images/exit.jpg'),'Exit', self)
+        exitAct = QAction(QIcon('../images/exit.jpg'),'Exit', self)
         exitAct.setShortcut('Ctrl+Q')
         exitAct.setStatusTip('Exit application')
         exitAct.triggered.connect(qApp.quit)

@@ -6,6 +6,7 @@ QComboBox 组件能让用户在多个选项中选择一个 (即下拉框)
 本例包含了一个QComboBox和一个QLabel。
 下拉选择框有多个选项，都是Linux/windows的发行版名称，
 标签内容为选定的发行版名称。
+
 """
 
 import sys

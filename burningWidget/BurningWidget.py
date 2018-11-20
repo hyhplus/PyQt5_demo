@@ -14,6 +14,7 @@ from PyQt5.QtCore import QObject, Qt, pyqtSignal
 from PyQt5.QtGui import QPainter, QFont, QColor, QPen
 import sys
 
+
 class Communticate(QObject):
 
     updateBW = pyqtSignal(int)
@@ -24,8 +25,7 @@ class BurningWidget(QWidget):
     def __init__(self):
 
         super().__init__()
-        self.initUI()
-
+        self.init_ui()
 
     def initUI(self):
         # 修改组件进度条的高度，默认的有点小
@@ -33,11 +33,8 @@ class BurningWidget(QWidget):
         self.value = 75
         self.num = [75, 150, 225, 300, 375, 450, 525, 600, 675]
 
-
     def setValue(self, value):
-
         self.value = value
-
 
     def paintEvent(self, e):
 
@@ -101,14 +98,12 @@ class BurningWidget(QWidget):
             j = j + 1
 
 
-
 class Example(QWidget):
 
     def __init__(self, *args, **kwargs):
 
         super().__init__(*args, **kwargs)
         self.initUI()
-
 
     def initUI(self):
 
@@ -136,7 +131,6 @@ class Example(QWidget):
         self.setWindowTitle('Burning widget')
         self.show()
 
-
     # 拖动滑块的时候，调用了 changeValue()方法。这个方法内部，我们自定义了一个可以传参的
     # updateBW信号。参数就是滑块的当前位置。这个数值之后还用于Burning组件，
     # 然后重新渲染Burning组件。
@@ -144,7 +138,6 @@ class Example(QWidget):
 
         self.c.updateBW.emit(value)
         self.wid.repaint()
-
 
 
 if __name__ == '__main__':

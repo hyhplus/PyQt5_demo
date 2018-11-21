@@ -85,7 +85,7 @@ class Example(QMainWindow):
         if action == openAct:
             pass
         if action == quitAct:
-            qApp.quit()     #触发退出事件
+            qApp.quit()     # 触发退出事件
 
 
 if __name__ == '__main__':

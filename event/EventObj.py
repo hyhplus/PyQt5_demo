@@ -18,7 +18,6 @@ class Example(QWidget):
         super().__init__()
         self.initUI()
 
-
     def initUI(self):
         grid = QGridLayout()
         grid.setSpacing(10)
@@ -40,7 +39,6 @@ class Example(QWidget):
         self.setWindowTitle('Event object')
         self.show()
 
-
     def mouseMoveEvent(self, e):
         # e 代表事件对象，里面有触发事件（鼠标移动）的事件对象
         # x() 和y() 方法得到鼠标的x 和 y 坐标点，
@@ -50,7 +48,6 @@ class Example(QWidget):
 
         text = "x: {0}, y: {1}".format(x, y)
         self.label.setText(text)
-
 
 
 if __name__ == '__main__':

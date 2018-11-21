@@ -63,10 +63,10 @@ class Example(QWidget):
         """
         QtGui.QDesktopWidget 提供了用户的桌面信息，包括屏幕大小
         """
-        qr = self.frameGeometry()   #获得主窗口大小
-        cp = QDesktopWidget().availableGeometry().center() #获取显示器的分辨率，然后得到中间点位置
-        qr.moveCenter(cp)     #把自己窗口的中心点放置到qr的中心点
-        self.move(qr.topLeft())  #然后把窗口的左上角的坐标设置为qr 的矩形左上角的坐标，这样窗口就居中了
+        qr = self.frameGeometry()   # 获得主窗口大小
+        cp = QDesktopWidget().availableGeometry().center()  # 获取显示器的分辨率，然后得到中间点位置
+        qr.moveCenter(cp)        # 把自己窗口的中心点放置到qr的中心点
+        self.move(qr.topLeft())  # 然后把窗口的左上角的坐标设置为qr 的矩形左上角的坐标，这样窗口就居中了
 
 
 if __name__ == '__main__':

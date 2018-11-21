@@ -64,7 +64,6 @@ class BurningWidget(QWidget):
 
         step = int(round(w / 10))
 
-
         till = int(((w / OVER_CAPACITY) * self.value))
         full = int(((w / OVER_CAPACITY) * MAX_CAPACITY))
 
@@ -135,7 +134,6 @@ class Example(QWidget):
         self.setGeometry(300, 300, 390, 210)
         self.setWindowTitle('Burning widget')
         self.show()
-
 
     def changeValue(self, value):
 

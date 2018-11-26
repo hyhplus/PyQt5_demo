@@ -82,9 +82,7 @@ class BurningWidget(QWidget):
             qp.setBrush(QColor(255, 255, 184))
             qp.drawRect(0, 0, till, h)
 
-
-        pen = QPen(QColor(20, 20, 20), 1,
-            Qt.SolidLine)
+        pen = QPen(QColor(20, 20, 20), 1, Qt.SolidLine)
 
         qp.setPen(pen)
         qp.setBrush(Qt.NoBrush)
@@ -107,7 +105,6 @@ class Example(QWidget):
         super().__init__()
 
         self.initUI()
-
 
     def initUI(self):
 

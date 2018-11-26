@@ -15,13 +15,13 @@ import sys
 from PyQt5.QtWidgets import (QWidget, QPushButton, QLineEdit,
                              QInputDialog, QApplication)
 
+
 class Example(QWidget):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.initUI()
-
 
     def initUI(self):
         self.btn = QPushButton('Dialog', self)
@@ -35,7 +35,6 @@ class Example(QWidget):
         self.setWindowTitle('Input dialog')
         self.show()
 
-
     def showDialog(self):
         # 显示输入框。第一个参数是输入框的标题，第二个参数是输入框的占位符
         # 对话框返回输入内容和一个布尔值，如果点击的是Ok按钮，布尔值就返回True
@@ -44,7 +43,6 @@ class Example(QWidget):
         # 把得到的字符串放到输入框里
         if ok:
             self.le.setText(str(text))
-
 
 
 if __name__ == '__main__':

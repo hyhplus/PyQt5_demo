@@ -34,7 +34,7 @@ class Example(QMainWindow):
         newAct = QAction('New', self)
 
         # 退出菜单,这里也绑定了工具栏
-        exitAct = QAction(QIcon('../images/exit.jpg'),'Exit', self)
+        exitAct = QAction(QIcon('../images/exit.jpg'), 'Exit', self)
         exitAct.setShortcut('Ctrl+Q')
         exitAct.setStatusTip('Exit application')
         exitAct.triggered.connect(qApp.quit)
@@ -48,7 +48,7 @@ class Example(QMainWindow):
         # 这个动作能切换状态栏显示或者隐藏
         viewStatAct = QAction('View statusBar', self, checkable=True)
         viewStatAct.setStatusTip('View statusBar')
-        viewStatAct.setChecked(True)  #设置默认为选中状态
+        viewStatAct.setChecked(True)   # 设置默认为选中状态
         viewStatAct.triggered.connect(self.toggleMenu)
 
         viewMenu.addAction(viewStatAct)

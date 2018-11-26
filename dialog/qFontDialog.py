@@ -17,11 +17,10 @@ class Example(QWidget):
         super().__init__(*args, **kwargs)
         self.initUI()
 
-
     def initUI(self):
         vBox = QVBoxLayout()
 
-        btn =  QPushButton('Dialog', self)
+        btn = QPushButton('Dialog', self)
         btn.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
 
         btn.move(20, 20)
@@ -39,7 +38,6 @@ class Example(QWidget):
         self.setWindowTitle('Font Dialog')
         self.show()
 
-
     def showDialog(self):
         # 弹出一个字体选择对话框。getFont()方法返回一个字体名称和状态信息
         font, ok = QFontDialog.getFont()
@@ -47,7 +45,6 @@ class Example(QWidget):
         # 如果点击OK, 标签的字体就会随之更改
         if ok:
             self.lbl.setFont(font)
-
 
 
 if __name__ == '__main__':

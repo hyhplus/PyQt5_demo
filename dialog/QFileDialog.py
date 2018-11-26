@@ -58,7 +58,6 @@ class Example(QMainWindow):
                 self.textEdit.setText(data)
 
 
-
 if __name__ == '__main__':
 
     app = QApplication(sys.argv)

@@ -12,6 +12,7 @@ from PyQt5.QtWidgets import QPushButton, QWidget, QApplication
 from PyQt5.QtCore import Qt, QMimeData
 from PyQt5.QtGui import QDrag
 
+
 # Button类继承 QPushButton类，然后重构 QPushButton的两个方法：mouseMoveEvent()
 # 和mousePressEvent()。 mouseMoveEvent()是拖拽开始的事件。
 class Button(QPushButton):

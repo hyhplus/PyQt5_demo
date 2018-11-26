@@ -17,7 +17,7 @@ from PyQt5.QtWidgets import (QWidget, QLCDNumber, QSlider,
 
 class Example(QWidget):
 
-    def __init__(self,*args, **kwargs):
+    def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.initUI()
 

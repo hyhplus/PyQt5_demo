@@ -26,12 +26,14 @@ class BurningWidget(QWidget):
 
         super().__init__()
         self.init_ui()
-
-    def initUI(self):
-        # 修改组件进度条的高度，默认的有点小
-        self.setMinimumSize(1, 30)
         self.value = 75
         self.num = [75, 150, 225, 300, 375, 450, 525, 600, 675]
+
+    def init_ui(self):
+        # 修改组件进度条的高度，默认的有点小
+        self.setMinimumSize(1, 30)
+        # self.value = 75
+        # self.num = [75, 150, 225, 300, 375, 450, 525, 600, 675]
 
     def setValue(self, value):
         self.value = value
@@ -42,7 +44,6 @@ class BurningWidget(QWidget):
         qp.begin(self)
         self.drawWidget(qp)
         qp.end()
-
 
     def drawWidget(self, qp):
 
@@ -103,9 +104,9 @@ class Example(QWidget):
     def __init__(self, *args, **kwargs):
 
         super().__init__(*args, **kwargs)
-        self.initUI()
+        self.init_ui()
 
-    def initUI(self):
+    def init_ui(self):
 
         OVER_CAPACITY = 750
 

@@ -10,7 +10,7 @@ QColorDialog提供颜色的选择。
 """
 import sys
 from PyQt5.QtWidgets import (QWidget, QPushButton, QFrame,
-    QColorDialog, QApplication)
+                             QColorDialog, QApplication)
 from PyQt5.QtGui import QColor
 
 
